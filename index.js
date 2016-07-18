@@ -13,30 +13,23 @@
 $(document).ready(function(){
 
 function handleCitySearch(event) {
-	//prevent default behavior of form submission (new page)
 	event.preventDefault();
 
-	//get value of input and store it
-	var city = ($('#city-type').val());
+	var city = $('#city-type').val();
 
-	//conditional statements
-	if (city == 'SF' || 'San Francisco') 
-	{
+	if (city === 'SF' || 'San Francisco') {
 		$('body').css('background', 'url(../homework-citipix/images/sf.jpg');
-	} 
-	else if (city == 'LA' || 'Los Angeles') 
-	{
+	}  else if (city == 'LA' || 'Los Angeles') {
 		//Just to see if this would work
 		$('body').css('.la');
-	} 
-	else if (city == 'NY' || 'New York' || 'NYC') 
-	{
+	} else if (city === 'NY' || 'New York' || 'NYC') {
 		$('body').css(".attr.('.nyc')");
-	} 
-	else if (city == 'AT' || 'Austin') 
-	{
+	} else if (city == 'AT' || 'Austin') {
 		$('body').css('background', 'url(../homework-citipix/images/austin.jpg');
-	} 
+	} else {
+		$('body').css('background', 'url(../homework-citipix/images/westie.jpg');
+	}
+
 }
 
 	$('#search').submit(handleCitySearch);
