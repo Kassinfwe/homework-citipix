@@ -20,17 +20,17 @@ function handleCitySearch(event) {
 	var city = ($('#city-type').val());
 
 	//conditional statements
-	if (city === 'SF' || 'San Francisco') 
+	if (city == 'SF' || 'San Francisco') 
 	{
 		$('body').css('background', 'url(westie.jpg');
 	} 
-	else if (city === 'LA' || 'Los Angeles') 
+	else if (city == 'LA' || 'Los Angeles') 
 	{
 		//Just to see if this would work
 		$('body').css('.la');
 	//it says the the { after 'Austin' is an "unexpected token"...
 	} 
-	else (city === 'AT' || 'Austin') 
+	else (city == 'AT' || 'Austin') 
 	{
 		$('body').css('background', 'url(westiesnow.jpg');
 	} 
