@@ -25,7 +25,7 @@ function handleCitySearch(event) {
 	} else if (city === 'LA' || 'Los Angeles') {
 		//Just to see if this would work
 		$('body').css('.la');
-	} else (city === 'AT' || Austin) {
+	} else (city === 'AT' || 'Austin') {
 		$('body').css('background', 'url(../images/austin.jpg');
 	} 
 }
