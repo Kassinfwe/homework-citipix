@@ -23,11 +23,13 @@ function handleCitySearch(event) {
 	if (city === 'SF' || 'San Francisco') {
 		$('body').css('background', 'url(../images/sf.jpg');
 	} else if (city === 'LA' || 'Los Angeles') {
+		//Just to see if this would work
 		$('body').css('.la');
 	} else (city === 'AT' || Austin) {
 		$('body').css('background', 'url(../images/austin.jpg');
 	} 
 }
 
+	//the error in console says "handleCitySearch" is not defined... 
 	$('#search').submit(handleCitySearch);
 });
