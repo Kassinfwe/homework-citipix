@@ -22,17 +22,20 @@ function handleCitySearch(event) {
 	//conditional statements
 	if (city == 'SF' || 'San Francisco') 
 	{
-		$('body').css('background', 'url(westie.jpg');
+		$('body').css('background', 'url(../homework-citipix/images/sf.jpg');
 	} 
 	else if (city == 'LA' || 'Los Angeles') 
 	{
 		//Just to see if this would work
 		$('body').css('.la');
-	//it says the the { after 'Austin' is an "unexpected token"...
 	} 
-	else (city == 'AT' || 'Austin') 
+	else if (city == 'NY' || 'New York' || 'NYC') 
 	{
-		$('body').css('background', 'url(westiesnow.jpg');
+		$('body').css(".attr.('.nyc')");
+	} 
+	else if (city == 'AT' || 'Austin') 
+	{
+		$('body').css('background', 'url(../homework-citipix/images/austin.jpg');
 	} 
 }
 
