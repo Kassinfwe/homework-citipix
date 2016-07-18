@@ -39,6 +39,5 @@ function handleCitySearch(event) {
 	} 
 }
 
-	//the error in console says "handleCitySearch" is not defined... 
 	$('#search').submit(handleCitySearch);
 });
