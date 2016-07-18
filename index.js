@@ -25,6 +25,7 @@ function handleCitySearch(event) {
 	} else if (city === 'LA' || 'Los Angeles') {
 		//Just to see if this would work
 		$('body').css('.la');
+	//it says the the { after 'Austin' is an "unexpected token"...
 	} else (city === 'AT' || 'Austin') {
 		$('body').css('background', 'url(../images/austin.jpg');
 	} 
