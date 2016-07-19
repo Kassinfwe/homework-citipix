@@ -17,19 +17,26 @@ function handleCitySearch(event) {
 
 	var city = $('#city-type').val();
 
-	if (city === 'SF' || 'San Francisco') {
-		$('body').css('background', 'url(../homework-citipix/images/sf.jpg');
-	}  else if (city == 'LA' || 'Los Angeles') {
-		//Just to see if this would work
-		$('body').css('.la');
-	} else if (city === 'NY' || 'New York' || 'NYC') {
-		$('body').css(".attr.('.nyc')");
-	} else if (city == 'AT' || 'Austin') {
-		$('body').css('background', 'url(../homework-citipix/images/austin.jpg');
-	} else {
-		$('body').css('background', 'url(../homework-citipix/images/westie.jpg');
-	}
+		var austin = ['austin' || 'atx'];
+    var la = ['los angeles' || 'la'];
+    var sf = ['sf', 'bay area', 'san francisco'];
+    var syd = ['sydney', 'syd', 'aus'];
+    var nyc = ['nyc', 'new york city', 'new york'];
 
+  //clears the input box
+  $('#city-type').val('');
+
+	if (city == sf) {
+		$('body').attr('class','sf');
+	}  else if (city == la) {
+		$('body').attr('class','la');
+	} else if (city == nyc) {
+		$('body').attr('class', 'nyc');
+	} else if (city == austin) {
+		$('body').attr('class', 'austin');
+	} else if (city == syd) {
+		$('body').attr('class','sydney');
+	} 
 }
 
 	$('#search').submit(handleCitySearch);
