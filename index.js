@@ -17,8 +17,8 @@ function handleCitySearch(event) {
 
 	var city = $('#city-type').val();
 
-		var austin = ['austin' || 'atx'];
-    var la = ['los angeles' || 'la'];
+		var austin = ['austin', 'atx'];
+    var la = ['los angeles', 'la'];
     var sf = ['sf', 'bay area', 'san francisco'];
     var syd = ['sydney', 'syd', 'aus'];
     var nyc = ['nyc', 'new york city', 'new york'];
@@ -26,15 +26,15 @@ function handleCitySearch(event) {
   //clears the input box
   $('#city-type').val('');
 
-	if (city == sf) {
+	if (sf.indexOf(city) != -1) {
 		$('body').attr('class','sf');
-	}  else if (city == la) {
+	}  else if (la.indexOf(city) != -1)  {
 		$('body').attr('class','la');
-	} else if (city == nyc) {
+	} else if (nyc.indexOf(city) != -1) {
 		$('body').attr('class', 'nyc');
-	} else if (city == austin) {
+	} else if (austin.indexOf(city) != -1) {
 		$('body').attr('class', 'austin');
-	} else if (city == syd) {
+	} else if (syd.indexOf(city) != -1) {
 		$('body').attr('class','sydney');
 	} 
 }
