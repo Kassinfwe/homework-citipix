@@ -16,6 +16,7 @@ function handleCitySearch(event) {
 	event.preventDefault();
 
 	var city = $('#city-type').val();
+	city = city.toLowerCase().trim();
 
 		var austin = ['austin', 'atx'];
     var la = ['los angeles', 'la'];
